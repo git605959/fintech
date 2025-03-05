@@ -1,0 +1,76 @@
+/* 복합 셀렉터 combinator */
+/* 부모-자식, 조상-자손 */
+
+/* 후손 셀렉터 */
+/* 셀렉터A 셀렉터B div 밑 모든 p 태그 선택(자식+자손) */
+
+div p {
+    color: red;
+}
+
+/* 자실 셀렉터 child combinator */
+/* 셀럭터A > 셀렉터B */
+
+div > p {
+    color: blueviolet;
+} 
+
+span > p {
+    color: brown;
+}
+
+/* 형제(동위) 셀렉터 sibling combinator */
+/* 형제 관계에서 뒤에 위치하는 요소를 선택할 때 사용 */
+/* 인접 형제 셀렉터 (셀렉터A + 셀렉터B) 
+: 셀렉터A의 형제 요소 중 셀렉터A 바로 뒤에 위치하는 셀렉터B 요소를 선택 */
+/* A와 B 사이에 다른 요소가 존재하면 선택이 되지 않음 */
+
+div + ul {
+    color: yellow;
+}
+
+/* 일반 형제 셀렉터 (셀렉터A ~ 셀렉터B) 
+: 셀렉터A의 형제 요소 중 뒤에 위치하는 셀렉터B 요소를 모두 선택 */
+
+span ~ ul {
+    color: green;
+}
+
+/* 가상 클래스 셀렉터 Pseudo-class selector */
+/* 요소의 특정 상태에 따라 스타일을 정의할 때 사용 */
+/* 특정 상태: 마우스가 올라와 있을 때, 링크를 방문했을 때, 아직 방문하지 않았을 때, 포커스가 들어와 있을 대 */
+
+a:hover /* a태그에 마우스가 올라왔을 때 */ {
+    background-color: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+/* 링크 셀렉터 */
+/* :link 셀렉터가 방문하지 않은 링크일 때
+    :visited 셀렉터가 방문한 링크일 때 
+    :hover 셀렉터에 마우스가 올라와있을 때
+    :active 셀렉터가 클릭된 상태일 때
+    :focus 셀렉터에 포커스가 들어와있을 때
+*/
+a:link{
+    color: orange;
+}
+a:visited{
+    color: green;
+}
+a:active{
+    font-weight: bold;
+}
+
+input[type="text"]:focus {
+    color: red;
+}
+
+input[type="password"]:focus {
+    color: white;
+}
+
+

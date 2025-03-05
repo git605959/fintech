@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/02CSS_selector_combinator.css">
+    <title>CSS셀렉터 복합셀렉터</title>
+</head>
+<body>
+    <h1>후손요소 div p </h1>
+    <div> <!-- h1과 형제자매 -->
+        <p>후손요소 1</p> <!--div와 부모자식 관계-->
+        <p>후손요소 2</p>
+        <span>
+            <p>후손요소 3</p>
+        </span> <!--span 때문에 자손이 되는 것-->
+    </div>
+    <div>후손요소 4</div>
+
+    <hr>
+    <h1>인접 형제 셀렉터</h1>
+
+    <div>A div element</div>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <p>the first paragraph.</p>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <span>A span element</span>
+    <a href="#">무제링크</a>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <h2>Another list</h2>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <h3>Another list2</h3>
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+    
+
+    <hr>
+    <h1>가상 클래스 셀렉터</h1>
+
+    <a href="#">Hover me</a><br><br>
+    <input type="text" placeholder="focus me">
+    <input type="text" value="포커스가 들어오면 빨간색으로 변해요">
+    <input type="password" value="포커스가 들어오면 초록색으로 변해요">
+
+    <hr>
+
+
+    
+
+</body>
+</html>

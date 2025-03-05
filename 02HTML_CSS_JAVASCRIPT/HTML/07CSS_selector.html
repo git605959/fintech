@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/01CSS)selector.css">
+    <title>07CSS셀렉터</title>
+    <style>
+        h1 {color: red;} /*모든 h1 태그 색 변경*/
+        p {color:blue;}
+    </style>
+</head>
+<body>
+    <h1>hello world!</h1>
+    <h1>hello world!2</h1>
+    <p>this paragraph is styled with CSS</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p style="color: black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, cupiditate.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h1 class="center">id,class 셀렉터</h1>
+
+    <div class="container">
+        <p id="p1"> paragraph 1</p>
+        <p id="p2">paragraph 2</p> <!--p#으로 간단히 적을 수 있음-->
+        <p class="p1">paragraph 3</p> <!--p.p1로 간단히 적을 수 있음-->
+        <p class="p2">paragraph 4</p>
+
+        <!-- 클래스를 따로 만들면 중첩해서 쓰기만 하면 됨 -->
+        <p class="strong">strong class</p>
+        <p class="center">center class</p>
+        <p class="graycolor">gray class</p>
+        <p class="strong center graycolor">all class</p> <!-- class 중첩 가능. p.strong.center.graycolor로 명령 가능-->
+        
+        <hr>
+        <!-- 어트리뷰트 셀렉터 -->
+        <h1 class="center">어트리뷰트 셀렉터</h1>
+        <div>
+            <a href="https://www.google.com">google.com</a><br>
+            <p><a href="https://www.naver.com" target="_blank">naver.com</a></p>
+            <a href="https://www.daum.net" target="_top">daum.net</a>
+        </div>
+
+        <h1 class="center">어트리뷰트 셀렉터~=</h1>
+        <div> <!--like "% first"-->
+            <h2 title="heading first">heading first</h2>
+            <h2 title="heading-first">heading-first</h2>
+            <h2 title="heading second">heading second</h2>
+            <h2 title="heading-second">heading-second</h2>
+
+        </div>
+        <h1 class="center">어트리뷰트 셀렉터|=</h1>
+        <div> <!--like "%heading-"-->
+            <h2 title="heading first">heading first</h2>
+            <h2 title="heading-first">heading-first</h2>
+            <h2 title="heading second">heading second</h2>
+            <h2 title="heading-second">heading-second</h2>
+
+        </div>
+
+        <h1 class="center">어트리뷰트 셀렉터^=</h1>
+        <div>
+            <a href="https://www.naver.com">naver.com</a>
+            <a href="http://www.naver.com">naver.com</a>
+        </div>
+
+        <h1 class="center">어트리뷰트 셀렉터$=</h1>
+        <div>
+            <a href="https://www.naver.com/aaa.pdf">naver.com/aaa.pdf</a>
+            <a href="http://www.naver.com/bbb.html">naver.com/bbb.html</a>
+        </div>
+
+        <h1 class="center">어트리뷰트 셀렉터*=</h1>
+        <div>
+            <p class="first">first</p>
+            <p class="first_test">first_test</p>
+            <p class="second">second</p>
+            <p class="second test">second test</p>
+            <p class="test">test</p>
+        </div>
+
+    </div>
+</body>
+</html>
