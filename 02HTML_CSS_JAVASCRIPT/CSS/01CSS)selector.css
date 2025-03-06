@@ -12,7 +12,7 @@ h3 {color: antiquewhite;}
 /* ID 셀렉터, CLASS 셀렉터 */
 /* 태그 안에 id 삽입 - #으로 지정  */
 /* id는 하나의 html파일에서 중복 불가 */
-#list {color: black;}
+#list {color: red;}
 #p1 {color: yellow;}
 #p2 {color: orange;}
 
@@ -36,6 +36,11 @@ h3 {color: antiquewhite;}
 
 .graycolor{
     color: gray;
+}
+
+.strong.center.graycolor {
+    /* 모두가 적용된 태그 찾는 법 */
+    font-size: 30px;
 }
 
 /* 어트리뷰트 (속성) src, href 셀렉터 attribute selector */
