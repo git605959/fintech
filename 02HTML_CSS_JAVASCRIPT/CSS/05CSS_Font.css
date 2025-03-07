@@ -1,3 +1,6 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
 /* 폰트 굵기 바꾸기 */
 /* font-weight */
 /* normal, bold */
@@ -109,6 +112,7 @@ Red Green blue
 
 .font_color li:nth-child(2) {
     color: #101234;
+    /* 00~ff까지 */
 }
 
 .font_color li:nth-child(3){
@@ -116,6 +120,7 @@ Red Green blue
 }
 .font_color li:nth-child(4){
     color: rgba(0,0,255,0.3);
+    /* 투명도 조절 가능 */
 }
 .font_color {
     background-color: rgba(0,0,0,0.8);

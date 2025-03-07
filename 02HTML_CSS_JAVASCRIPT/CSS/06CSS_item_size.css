@@ -147,6 +147,8 @@ div.padding2 div {
     box-sizing: border-box;
 }
 
+/* 블록 요소들 마진 겹침 현상 - 어느 한 쪽의 마진이 더 크면 그쪽으로 겹쳐버리는 현상 */
+
 /* 테두리의 형태 지정하기 */
 div.line_type {
     border: 1px solid red;
@@ -161,19 +163,19 @@ div.line_type div {
 
 div.line_type div:nth-child(1) {
     border-width: 1px;
-    border-style: solid;
+    border-style: solid; /*실선*/
     border-color: red;
 }
 div.line_type div:nth-child(2) {
     border-width: 10px;
-    border-style: dashed;
+    border-style: dashed; /*점선*/
     border-color: green;
 }
 div.line_type div:nth-child(3) {
     border-width: 10px;
-    border-style: dotted;
+    border-style: dotted; /*점선(dot으로 이뤄진)*/
     border-color: blue;
 }
 div.line_type div:nth-child(4) {
-    border-width: 10px double blue;
+    border-width: 10px double blue; /*이중선*/
 }
