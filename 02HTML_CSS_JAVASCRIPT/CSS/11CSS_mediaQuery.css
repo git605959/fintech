@@ -1,0 +1,50 @@
+html{
+    font-size : 50px;
+}
+
+
+article {
+    width: 400px;
+    height: 200px;
+    background-color: pink;
+    margin: 100px auto;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* 화면 넓이가 900 이하인 경우 */
+@media screen and (max-width: 900px) {
+    html{
+        font-size: 40px;
+    }
+    article{
+        background-color: orange;
+    }    
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+/* 화면 넓이가 400 이하인 경우  */
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 20px;
+    }
+    article{
+        background-color: aqua;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+/* 개발자 도구 - device toolbar로 화면크기 조정 가능 */
+/* 화면 크기에 따라 폰트 크기도 조정 */
+

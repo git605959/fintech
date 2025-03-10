@@ -306,18 +306,18 @@ grid : 정렬을 해 주는데, 위치 지정이 가능 (구역 분할->지정) 
     width: 200px;
     height: 200px;
     background-color: blue;
-    position: absolute;
+    position: relative;
     top: 50px;
     left: 50px;
-    z-index: 3; /*숫자가 높은 쪽이 위로 옴*/
+    z-index: 2; /*숫자가 높은 쪽이 위로 옴*/
 }
 
 .zindex .zimiddle{
     width: 200px;
     height: 200px;
     background-color: green;
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top: -20px;
     left: 0px;
     z-index: 1;
 }
@@ -326,10 +326,10 @@ grid : 정렬을 해 주는데, 위치 지정이 가능 (구역 분할->지정) 
     width: 200px;
     height: 200px;
     background-color: red;
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    z-index: 2;
+    position: relative;
+    bottom: 200px;
+    right: -100px;
+    z-index: 3;
 }
 
 
