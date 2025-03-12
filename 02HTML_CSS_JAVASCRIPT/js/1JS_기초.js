@@ -9,6 +9,12 @@ const link = document.querySelector("a");
 //     console.log("링크를 클릭했습니다.")
 // });
 
+//function(e) (이벤트 핸들러)
+// addEventListener -> function(e)
+// 이벤트가 발생하면 이벤트 객체가 생성되는데, 이 객체가 e라는 파라미터에 할당됨.
+// ex. mousedown의 경우 (1) 마우스 좌표 (2) 버튼 번호, keydown의 경우 (1) 키 코드 값, shift 키가 눌렸는지 등
+
+
 // 링크를 클릭해도 링크가 작동되지 않고 console.log만 작동되도록 preventDefault()
 link.addEventListener("click",(e)=>{
     e.preventDefault();
