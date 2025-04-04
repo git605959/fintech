@@ -1,5 +1,8 @@
 .ipynb_checkpoints
 data/
-.json
-.csv
+dist/
+build/
+*.json
+*.csv
 scraping_results/
+*.exe
