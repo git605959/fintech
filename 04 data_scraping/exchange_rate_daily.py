@@ -74,3 +74,4 @@ df = df[['date','통화', '현찰_사실_때_환율', '현찰_사실_때_Spread'
 to_ex_db(df)
 
 driver.close()
+print(f"{today} db 업데이트가 완료되었습니다.")
